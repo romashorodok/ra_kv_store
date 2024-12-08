@@ -1,4 +1,4 @@
-ra_experiment
+ra_kv_store
 =====
 
 An OTP application
