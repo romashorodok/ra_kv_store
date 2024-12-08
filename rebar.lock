@@ -1,10 +1,22 @@
 {"1.2.0",
 [{<<"aten">>,{pkg,<<"aten">>,<<"0.6.0">>},1},
+ {<<"cowboy">>,
+  {git,"https://github.com/ninenines/cowboy.git",
+       {ref,"3ea8395eb8f53a57acb5d3c00b99c70296e7cdbd"}},
+  0},
+ {<<"cowlib">>,
+  {git,"https://github.com/ninenines/cowlib",
+       {ref,"1eb7f4293a652adcfe43b1835d22c58d8def839f"}},
+  1},
  {<<"gen_batch_server">>,{pkg,<<"gen_batch_server">>,<<"0.8.9">>},1},
  {<<"ra">>,
   {git,"https://github.com/rabbitmq/ra.git",
        {ref,"c8dbe23258e34e8bbbaa2e2dfb167a314bf06ff0"}},
   0},
+ {<<"ranch">>,
+  {git,"https://github.com/ninenines/ranch",
+       {ref,"a692f44567034dacf5efcaa24a24183788594eb7"}},
+  1},
  {<<"seshat">>,{pkg,<<"seshat">>,<<"0.6.0">>},1}]}.
 [
 {pkg_hash,[

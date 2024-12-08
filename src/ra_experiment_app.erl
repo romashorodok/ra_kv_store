@@ -9,10 +9,10 @@
 
 -export([start/2, stop/1]).
 
-start(_StartType, _StartArgs) ->
+start(_Type, _Args) ->
+    Dispatch = cowboy_router:compile([{'_', [{"/", hello_handler, []}]}]),
+    {ok, _} = cowboy:start_clear(http, [{port, 8081}], #{env => #{dispatch => Dispatch}}),
     ra_experiment_sup:start_link().
 
 stop(_State) ->
-    ok.
-
-%% internal functions
+    ok = cowboy:stop_listener(http).%% internal functions

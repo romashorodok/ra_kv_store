@@ -5,7 +5,9 @@
     {mod, {ra_experiment_app, []}},
     {applications, [
         kernel,
-        stdlib
+        stdlib,
+        ranch,
+        cowboy
     ]},
     {env, []},
     {modules, []},
